@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class aiRoom4 {
+
+	public static void main(String[] args) {
+		System.out.println(" PBK의 핸드폰 전화번호 뒷자리 ???? 를 맞춰주세요~~ ");
+		System.out.println(" A숫자와 B숫자의 연관성을 보고 맞추어 보세요");
+		System.out.println(" A [ 0  1  2   3  4  5  6   7  8  9 ]");
+		System.out.println(" B [ 1  1  1   1  2  2  1   1  1  1 ]");
+		System.out.println();
+		System.out.println("    [ 0  1  0 - 4  6  1  1 - 5  2  7  8 ]");
+		System.out.println("PBK [ 1  1  1 - 2  1  1  1 - ?  ?  ?  ? ]");
+		System.out.println();
+		Scanner sc = new Scanner(System.in);
+		
+		while(true) {
+		System.out.println("????는 ?");
+		int phonenum = sc.nextInt();
+		
+		if (phonenum == 2111) {
+			System.out.println("정답입니다! PBK의 전화번호 뒷자리는 2111 입니다.");
+			System.out.println("깨진핸드폰, 증거품을 수집하였습니다.");
+			break;
+			
+		}else if(phonenum != 2111){
+			System.out.println("다시 맞춰주세요!! 숫자 획수를 봐봐요~~~");
+			
+		}
+	}
+
+}
+}
