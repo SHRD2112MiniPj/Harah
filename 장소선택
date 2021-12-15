@@ -1,0 +1,210 @@
+		System.out.println("[1] 휴게실 [2] 원장실 [3] 경비실 [4] 강의실 [5] 교무실");
+		int choice = sc.nextInt();
+
+//////////////////////////////////////////////////////////////////////////////////////////////////		
+
+/////////////////////////////////////////////////////////////////////////////////////////////////		
+
+		if (choice == 1) {
+			// 휴게실
+			System.out.println("[1] 휴게실을 탐색합니다.");
+			System.out.println("[1]추궁하기 [2]증거찾기 [3]되돌아가기 ");
+			
+
+			if (choice == 1) {          //추궁하기
+				
+				System.out.println("박상민과 대화를 합니다.");
+
+			}
+
+			else if (choice == 2) {
+				System.out.println("증거를 찾을 장소를 선택하세요");
+				System.out.println("[1]정수기 뒤편 [2]쓰레기통 [3]휴식용 텐트 [4] 찾지 않는다.");
+				
+				if (choice == 1) { // 퀴즈 내기
+
+				} else if (choice == 2) {
+
+				} else if (choice == 3) {
+
+				} else if (choice == 4) {
+
+				}
+			} else if (choice == 3) {		//4층 복도 메뉴로 돌아가는 메소드
+
+			}
+		}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////		
+		// 원장실
+
+		System.out.println("[2] 원장실을 탐색합니다. ");
+		System.out.println("[1]추궁하기 [2]증거찾기 [3]되돌아가기 ");
+		
+		if (choice == 1) {
+			System.out.println("박나영과 대화를 합니다.");
+
+		}
+
+		else if (choice == 2) {
+			System.out.println("증거를 찾을 장소를 선택하세요");
+			System.out.println("[1]       [2]       [3]        [4]     ");
+			
+			
+			if (choice == 1) { // 퀴즈 내기
+
+			} else if (choice == 2) {
+
+			} else if (choice == 3) {
+
+			} else if (choice == 4) {
+
+			}
+		} else if (choice == 3) {   //4층 복도 메뉴로 돌아가는 메소드
+			
+
+		}
+	
+	
+	
+	
+	
+
+	
+
+/////////////////////////////////////////////////////////////////////////////////////////////////		
+	// 경비실
+
+	System.out.println("[3] 경비실을 탐색합니다.");
+	System.out.println("[1]추궁하기 [2]증거찾기 [3]되돌아가기 ");
+	
+	
+	if (choice == 1) {
+		System.out.println("장현도과 대화를 합니다.");
+		
+	}
+	else if (choice == 2) {
+		int pickSecu = sc.nextInt();
+		System.out.println("증거를 찾을 장소를 선택하세요");
+		System.out.println("[1]       [2]    [3]    [4]     ");
+		
+		if (choice == 1) { // 퀴즈 내기 메소드
+			
+			
+			
+		} else if (choice == 2) {
+
+		} else if (choice == 3) {
+
+		} else if (choice == 4) {
+
+		}
+	} else if (choice == 3) {		//4층 복도 메뉴로 돌아가는 메소드
+
+	}
+
+
+
+	
+
+/////////////////////////////////////////////////////////////////////////////////////////////////		
+
+	// 강의실
+
+	System.out.println("[4] 강의실을 탐색합니다.");
+	System.out.println("[1]추궁하기 [2]증거찾기 [3]되돌아가기 ");
+
+		
+	if (choice == 1) {	
+	System.out.println("서하라과 대화를 합니다.");
+	}
+	else if (choice == 2) {
+		int pickLec = sc.nextInt();
+		System.out.println("증거를 찾을 장소를 선택하세요");
+		System.out.println("[1]       [2]    [3]    [4]     ");
+		
+		if (choice == 1) { // 퀴즈 내기 메소드
+
+	
+		} else if (choice == 2) {
+
+		} else if (choice == 3) {
+
+		} else if (choice == 4) {
+
+		}
+	} else if (choice == 3) {		//4층 복도 메뉴로 돌아가는 메소드
+
+	}
+			
+
+/////////////////////////////////////////////////////////////////////////////////////////////////		
+	// 교무실
+
+	System.out.println("[5] 교무실을 탐색합니다.");
+	System.out.println("[1]추궁하기 [2]증거찾기 [3]되돌아가기 ");
+	
+	
+	if (choice == 1) {	
+	System.out.println("김지은과 대화를 합니다.");
+	
+	}
+	else if (choice == 2) {
+		int pickTeach = sc.nextInt();
+		System.out.println("증거를 찾을 장소를 선택하세요");
+		System.out.println("[1]       [2]    [3]    [4]     ");
+		
+		if (choice == 1) { // 퀴즈 내기 메소드
+
+	
+		} else if (choice == 2) {
+
+		} else if (choice == 3) {
+
+		} else if (choice == 4) {
+
+		}
+	} else if (choice == 3) {		//4층 복도 메뉴로 돌아가는 메소드
+
+	}
+
+	
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+	// 범인 지목
+	System.out.println("범임을 지목 하시겠습니까?");
+	System.out.println(" [1] 박상민 [2] 박나영 [3] 장현도 [4] 서하라 [5] 김지은 ");
+	String murder = sc.next();
+	
+	System.out.println("지목 한 범인이 확실합니까?");
+
+	if(murder.equals(murder))
+	{// 범인을 맞춤
+		System.out.println("범인을 맟추셨습니다.");/////////////////////////////// 엔딩 넘어가기
+	}else
+	{
+		// 범인을 못맞힘
+		System.out.println("범인을 다시 생각 해주세요."); // 다시 복도 메뉴로 감
+	}
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// 증거보기
+
+	System.out.println("수집한 증거를 보여주세요.");
+	System.out.println("수집한 증거는 총"+" "+"개 입니다."); // 증거갯수 보여주기
+
+	System.out.println(" ");
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////		
+
+	// 저장
+
+	System.out.println("지금 게임을 저장 하시겠습니까?");
+	System.out.println("[1] Yes [2] NO ");
+
+	System.out.println("게임을 저장합니다."); // YES 게임저장 진행
+
+	System.out.println("게임을 진행하기 위해 복도로 이동합니다."); // No게임 저장하지 않고 다시 게임 진행 menu로 이동
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// 종료 엔딩
