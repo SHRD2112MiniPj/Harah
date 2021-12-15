@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class aiRoom {
+
+	public static void main(String[] args) {
+		// 퀴즈를 맞추어 증거물을 획득하세요!
+//		증거물과 관련된 단어로 할것
+//		[ S,  M,  O,   K,   I,  N,  G ]
+//		[ 1,   2,   3,   4,  5,  6,   7 ]
+//		알파벳 을 보고 단어 유추 , 맞으면 증거물 획득  => 담배 모양 그림 보이기  OR 못하면 다시 문제 제시
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println(" 문제를 맞추어 증거를 획득하세요. ");
+		System.out.println("     I = 5 ");
+		System.out.println("     M = ( ? ) "); // 2
+		System.out.println("     O = 3 ");
+		System.out.println("     G = 7 ");
+		System.out.println("     S = 1 ");
+		System.out.println("     K = 4 ");
+		System.out.println("     N = 6 ");
+
+		while (true) {
+			System.out.println(" 물음표(?)에 들어갈 것은 ? ");
+			System.out.println("( ? )입력 >> ");
+			int answer1 = sc.nextInt();
+
+			if (answer1 != 2) {
+				System.out.println("다시 해봐요~~~");
+
+			}if (answer1 == 2) {
+
+					System.out.println(" 배열 좀 아시네~~~");
+					System.out.println(" 알파벳을 조합하여 단어를 맞춰주세요.");
+					System.out.println(" 단어 입력 >> ");
+					String answer2 = sc.next();
+						if (answer2.equals("smoking")) {
+							System.out.println("오!!! 영어 좀 하는데~~");
+							System.out.println("결정적 증거를 획득하셨습니다.");
+							break;
+						}else{
+							System.out.println("다시 맞춰주세요!!");
+						}
+				}
+				}	
+			}
+		}
+	
+
